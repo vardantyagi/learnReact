@@ -1,0 +1,144 @@
+/* @import "tailwindcss"; */
+.p{
+  /* margin-left: 100px; */
+}
+.all{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* width: 100vw;
+  height: 100vh; */
+}
+.inp{
+  border: 1px solid black;
+  outline: none;
+  margin-bottom: 20px;
+}
+.menubar{
+  background-color: yellow;
+  height: 100%;
+  width: 80%;
+  position: fixed;
+  margin: auto;
+  left: -100%;
+  transition: all 0.4s;
+}
+.menubar ul li{
+  display: inline-block;
+}
+.click{
+  font-size: 30px;
+  font-weight: 900;
+  z-index: 10;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+.left{
+  left: 0%;
+}
+.modalOverLay{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  display: none;
+  transition: all 0.5s;
+}
+.modalOverLayDisplay{
+  display: block;
+}
+.popup{
+  height: 320px;
+  width: 320px;
+  background-color: #fff;
+  position: fixed;
+  top: -50%;
+}
+.popupDisplay{
+  top: 25%;
+  transition: all 0.5s;
+}
+.para{
+  margin: auto;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: 700;
+}
+.designEnquiry{
+  position: fixed;
+  right: -10px;
+  top: 7rem;
+  background-color: #121212;
+  color: white;
+  transform: rotate(90deg);
+  padding: 4px;
+  border-radius: 5px;
+}
+.clickCross{
+  font-size: 20px;
+  font-weight: 700;
+}
+.faqouter{
+  width: 800px;
+  margin: auto;
+}
+.faqItems{
+  border: 1px solid red;
+  margin-bottom: 20px;
+}
+.faqItems h2{
+  margin: 0;
+  padding: 0;
+  background-color: #212121;
+  color: white;
+  cursor: pointer;
+}
+.faqItems p{
+  margin: 0;
+  padding: 0;
+  height: 0;
+  transform: scaleY(0);
+  transition: all 0.5s;
+}
+.activeAns{
+  padding: 10px !important;
+  transform: scaleY(1) !important;
+  height: auto !important;
+}
+.deactiveAns{
+  padding: 0px !important;
+  transform: scaleY(0) !important;
+  height: 0 !important;
+}
+.outerBox{
+  width: 800px;
+  margin: auto;
+}
+.innerBox{
+  margin-bottom: 20px;
+  border: 1px solid red;
+}
+.innerBox h2{
+  margin: 0;
+  padding: 0;
+  background-color: #212121;
+  color: #fff;
+  cursor: pointer;
+  text-align: left;
+}
+.innerBox p{
+  transform: scaleY(0);
+  text-align: left;
+  height: 0;
+  padding: 0px;
+  margin: 0;
+  transition: all 0.5s;
+}
+.showAns{
+  transform: scaleY(1) !important;
+  height: auto !important;
+  padding: 10px !important;
+}

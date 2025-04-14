@@ -1,0 +1,44 @@
+.heading{
+  text-align: center;
+}
+form{
+  width: 1120px;
+  /* width: 65vw; */
+  margin: auto;
+  display: flex;
+  gap: 20px;
+}
+form input{
+  flex-basis: 80%;
+  height: 40px;
+}
+form button{
+  flex-basis: 20%;
+}
+.outerDiv{
+  width: 1120px;
+  margin: auto;
+}
+.outerDiv ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.outerDiv ul li{
+  background-color: black;
+  color: white;
+  padding: 10px;
+  position: relative;
+  margin-top: 20px;
+  font-size: 25px;
+}
+.outerDiv ul li span{
+  position: absolute;
+  right: 10px;
+  font-weight: 900;
+  cursor: pointer;
+}
+.crossLine{
+  text-decoration: line-through;
+  color: red !important;
+}
